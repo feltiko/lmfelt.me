@@ -1,0 +1,12 @@
+@mixin link($linkColor) {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $linkColor;
+}
+
+@mixin transition() {
+    transition: .26s ease;
+    -webkit-transition: .26s ease;
+    -moz-transition: .26s ease;
+    -o-transition: .26s ease;
+}

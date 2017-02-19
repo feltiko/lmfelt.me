@@ -1,0 +1,17 @@
+$color_list: #ED4264, #FFEDBC, #3d85c6, #6fa8dc, #9fc5e8, #c8bede, #b3a6d5, #8675b8, #674ea7, #351c75, #741b47, #a64d79, #c27ba0, #d5a6bd, #d8aca4, #dd7e6b, #cc4125, #a61c00, #85200c, #571407;
+
+$speed: 50s;
+$timing-function: ease;
+$size: 2000%;
+
+#gradient {
+	background: linear-gradient(270deg, $color-list);
+	background-size: $size $size;
+	animation: colors $speed $timing-function infinite;
+}
+
+@keyframes colors { 
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
